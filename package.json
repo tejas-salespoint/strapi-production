@@ -7,13 +7,16 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "build:win": "cross-env NODE_ENV=production npm run build",
+    "start:win": "cross-env NODE_ENV=production npm start"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.12.5",
-    "@strapi/plugin-users-permissions": "4.12.5",
     "@strapi/plugin-i18n": "4.12.5",
+    "@strapi/plugin-users-permissions": "4.12.5",
+    "@strapi/strapi": "4.12.5",
+    "cross-env": "^7.0.3",
     "mysql": "2.18.1"
   },
   "author": {
